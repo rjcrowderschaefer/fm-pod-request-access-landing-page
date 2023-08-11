@@ -150,3 +150,21 @@ article {
   padding-left: 30px;
   padding-right: 30px;
 }
+
+/* .social-icons-container {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: space-evenly;
+  align-items: baseline;
+} */
+
+.social-icons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+.social-icon {
+  transform: scale(.5);
+  /* display: inline-block; */
+}
+
