@@ -159,12 +159,19 @@ article {
 } */
 
 .social-icons-container {
+  /* display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center; */
   display: grid;
-  grid-template-columns: repeat(4, 25%);
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
 }
 
 .social-icon {
+  /* width: 100%;
+  height: auto; */
+
   transform: scale(.5);
-  /* display: inline-block; */
 }
 
