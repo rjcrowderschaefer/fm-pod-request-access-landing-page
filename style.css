@@ -151,36 +151,66 @@ article {
   padding-right: 30px;
 }
 
-
 .social-icons-container {
   display: flex;
-  
   align-items: center;
-}
-
-.social-icon {
-  /* transform: scale(0.6); */
-  display: block;
-  background-color: blue;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .single-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
-  border: 1px solid black;
+ 
+}
+
+.social-icon {
+  opacity: 0.6;
+
 }
 
 .spotify-container {
-  background-color: green;
-  width: 30%;
-  margin-left: 0px;
+  width: 45px;
+  height: 20px;
+  /* margin: 0 10px 0 15px;; */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#spotify-icon {
-  transform: scale(0.6);
-  
+.apple-container {
+  width: 50px;
+  padding-left: 10px;
+  /* margin: 0 10px 0 0; */
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
+
+.google-container {
+  width: 90px;
+  height: 35px;
+  /* margin: 0 10px 0 0; */
+  padding-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pocket-container {
+  width: 65px;
+  height: 35px;
+  /* margin: 0 15px 0 0; */
+  padding-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
