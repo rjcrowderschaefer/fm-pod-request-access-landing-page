@@ -263,6 +263,26 @@ input:focus {
   background-color: #B3FFE2;
 }
 
+.error-message {
+  display: none;
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.valid-submission {
+  display: none;
+  color: green;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-left: 30px;
+  margin-top: 5px;
+
+}
+
 footer {
   padding-bottom:10px;
 }

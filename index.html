@@ -340,10 +340,21 @@
           </div>
           </div>
           <div class="request-form">
-          <form>
-            <input type="email" id="email" class="email" placeholder="Email address" id="email" name="email">
-            <input type="submit" class="submit" value="Request Access">
+          <form id="form">
+            <input type="text" id="email" class="email" placeholder="Email address" name="email">
+            <div id="required-error" class="error-message">
+              This field cannot be blank
+              </div>
+            <div id="email-error" class="error-message">
+              Oops! Please check your email
+              </div>
+            <button type="submit" class="submit">Request Access</button>
+            <div id="valid-submission" class="valid-submission">
+              Thank you! We've received your request.
+              </div>
           </form>
+
+        
         </div>
         </div>
       </aside>
