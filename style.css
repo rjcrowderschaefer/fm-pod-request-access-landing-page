@@ -295,3 +295,20 @@ footer {
   color: #54E6AF;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 768px) {
+
+  body::before {
+    display: none;
+  }
+
+  #pageHeader {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .pod-logo {
+    margin-left: 40px;
+  }
+
+}
