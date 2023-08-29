@@ -84,15 +84,10 @@ body::before{
   "aside aside aside"
   "footer footer footer";
   grid-template-rows: 25% 30% 5% 30%;
-  grid-template-columns: 20% 1fr 20%;
-  /* grid-gap: 10px; */
+  grid-template-columns: 1fr 1fr 1fr;
   height: 100vh;
   margin: 0;
 }
-
-/* header, footer, article, aside, nav, div {
-  padding: 10px;
-} */
 
 #pageHeader {
   grid-area: header;
@@ -173,13 +168,11 @@ article {
 
 .social-icon {
   opacity: 0.6;
-
 }
 
 .spotify-container {
   width: 45px;
   height: 20px;
-  /* margin: 0 10px 0 15px;; */
   padding: 0;
   display: flex;
   align-items: center;
@@ -189,7 +182,6 @@ article {
 .apple-container {
   width: 50px;
   padding-left: 10px;
-  /* margin: 0 10px 0 0; */
   padding: 0;
   display: flex;
   align-items: center;
@@ -200,7 +192,6 @@ article {
 .google-container {
   width: 90px;
   height: 35px;
-  /* margin: 0 10px 0 0; */
   padding-top: 12px;
   display: flex;
   align-items: center;
@@ -210,7 +201,6 @@ article {
 .pocket-container {
   width: 65px;
   height: 35px;
-  /* margin: 0 15px 0 0; */
   padding-top: 3px;
   display: flex;
   align-items: center;
@@ -287,6 +277,10 @@ footer {
   padding-bottom:10px;
 }
 
+.green-dots {
+  display: none;
+}
+
 .attribution, .attribution a {
   color: #C2CBE5;
 }
@@ -302,6 +296,17 @@ footer {
     display: none;
   }
 
+  body {
+    background-image: url("./assets/tablet/image-host.jpg");
+    background-size: 477px auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+
+  .content-container {
+    width: 100%;
+  }
+
   #pageHeader {
     align-items: flex-start;
     justify-content: flex-start;
@@ -309,6 +314,103 @@ footer {
 
   .pod-logo {
     margin-left: 40px;
+    margin-top: 60px;
+  }
+
+  #mainArticle {
+    background-color: #121725;
+    width: 80%;
+    height: 531px;
+    margin-left: 40px;
+    padding-bottom: 500px;
+  }
+
+  .h1-title {
+    padding-top: 80px;
+    font-size: 4.8rem;
+    text-align: left;
+    line-height: 5.4rem;
+  }
+
+  .instructions {
+    font-size: 1.8rem;
+    text-align: left;
+    padding-left: 0px;
+    width: 445px;
+    margin: 0 0;
+  }
+
+  .request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+  
+  .form-fields {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .email {
+    width: 427px;
+    font-size: 1.4rem;
+    z-index: 1;
+  }
+  
+  .submit {
+    position: absolute;
+    width: 162px;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
+    z-index: 2;
+    font-size: 1.4rem;
+  }
+
+  .error-message {
+    font-size: 1.2rem;
+    margin-top: 8px;
+  }
+
+  .valid-submission {
+    font-size: 1.2rem;
+    margin-top: 0px;
+  }
+  
+  .social-icons-container {
+    position: absolute;
+    margin-top: 165px;
+    padding-left: 15px;
+  }
+
+  .single-icon-container {
+    margin-right: 40px;
+  }
+
+  .spotify-container {
+    width: 80px;
+  }
+
+  .apple-container {
+    width: 78px;
+  }
+
+  .google-container {
+    width: 125px;
+  }
+
+  .pocket-container {
+    width: 100px;
+  }
+
+  .green-dots {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    bottom: 0px;
   }
 
 }

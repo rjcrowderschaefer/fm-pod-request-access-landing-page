@@ -24,7 +24,7 @@ function validate() {
         email.style.marginBottom = '0px';
     } else {
         validSubmission.style.display = 'block';
-        email.style.marginBottom = '15px';
+        email.style.marginBottom = '8px';
     }
 }
 
