@@ -3,8 +3,8 @@ const formContainer = document.getElementById('form');
 const requiredError = document.getElementById('required-error');
 const emailError = document.getElementById('email-error');
 const validSubmission = document.getElementById('valid-submission');
-const smallMediaQuery = window.matchMedia('(min-width: 767px');
-const mediumMediaQuery = window.matchMedia('min-width: 768px');
+const smallMediaQuery = window.matchMedia('(min-width: 767px)');
+const mediumMediaQuery = window.matchMedia('(min-width: 768px)');
 // const largeMediaQuery = window.matchMedia('min-width: 1275px');
 
 function validateEmail(val) {
@@ -17,6 +17,8 @@ function hideAllErrors() {
     emailError.style.display = 'none';
     validSubmission.style.display = 'none';
 }
+
+console.log(mediumMediaQuery.matches)
 
 function validate() {
     hideAllErrors();
@@ -68,6 +70,6 @@ form.addEventListener('submit', function(e) {
   validate();  
 });
 
-mediumMediaQuery.addEventListener('change', validate());
+mediumMediaQuery.addEventListener('change', validate);
 
 // largeMediaQuery.addEventListener('change', validate);
