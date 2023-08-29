@@ -277,7 +277,7 @@ footer {
   padding-bottom:10px;
 }
 
-.green-dots {
+.green-dots-tablet, .green-dots-desktop {
   display: none;
 }
 
@@ -406,7 +406,7 @@ footer {
     width: 100px;
   }
 
-  .green-dots {
+  .green-dots-tablet {
     display: inline-block;
     position: absolute;
     left: 30px;
@@ -415,6 +415,71 @@ footer {
 
 }
 
-/* @media only screen and (min-width: 1275px) {
+@media only screen and (min-width: 1440px) {
   
-} */
+  body {
+    background-image: url("./assets/desktop/image-host.jpg");
+    background-size: 888px auto;
+    background-position: bottom 65% right;
+  }
+
+  .pod-logo {
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+
+  #mainArticle {
+    margin-left: 150px;
+    width: 50.5%
+  }
+
+  .h1-title {
+    padding-top: 110px;
+    font-size: 5.2rem;
+    margin-bottom: 35px;
+    line-height: 6.5rem;
+  }
+
+  .instructions {
+    font-size: 1.8rem;
+    width: 470px;
+  }
+
+  .request-form {
+    margin-top: 75px;
+    margin-left: 109px;
+  }
+
+  .social-icons-container {
+    margin-left: 140px;
+    margin-top: 185px;
+  }
+
+  .spotify-container {
+    width: 100px;
+  }
+
+  .apple-container {
+    width: 98px;
+  }
+
+  .google-container {
+    width: 145px;
+  }
+
+  .pocket-container {
+    width: 120px;
+  }
+
+  .green-dots-tablet {
+    display: none;
+  }
+
+  .green-dots-desktop {
+    display: inline-block;
+    position: absolute;
+    left: 83.8%;
+    bottom: 20.2%
+  }
+
+}

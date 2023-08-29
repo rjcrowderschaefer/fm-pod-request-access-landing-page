@@ -5,7 +5,7 @@ const emailError = document.getElementById('email-error');
 const validSubmission = document.getElementById('valid-submission');
 const smallMediaQuery = window.matchMedia('(min-width: 767px)');
 const mediumMediaQuery = window.matchMedia('(min-width: 768px)');
-// const largeMediaQuery = window.matchMedia('min-width: 1275px');
+const largeMediaQuery = window.matchMedia('min-width: 1440px');
 
 function validateEmail(val) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -33,17 +33,17 @@ function validate() {
             validSubmission.style.display = 'block';
             email.style.marginBottom = '8px';
         }
-    // } else if (largeMediaQuery.matches) {
-    //     if (!email.value) {
-    //         requiredError.style.display = 'block';
-    //         email.style.marginBottom = '0px';
-    //     } else if (!validateEmail(email.value)) {
-    //         emailError.style.display = 'block';
-    //         email.style.marginBottom = '0px';
-    //     } else {
-    //         validSubmission.style.display = 'block';
-    //         email.style.marginBottom = '8px';
-    //     }
+    } else if (largeMediaQuery.matches) {
+        if (!email.value) {
+            requiredError.style.display = 'block';
+            email.style.marginBottom = '0px';
+        } else if (!validateEmail(email.value)) {
+            emailError.style.display = 'block';
+            email.style.marginBottom = '0px';
+        } else {
+            validSubmission.style.display = 'block';
+            email.style.marginBottom = '8px';
+        }
     } else {
         if (!email.value) {
             formContainer.style.position = 'relative';
