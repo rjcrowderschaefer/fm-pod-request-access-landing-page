@@ -4,8 +4,8 @@ const requiredError = document.getElementById('required-error');
 const emailError = document.getElementById('email-error');
 const validSubmission = document.getElementById('valid-submission');
 const smallMediaQuery = window.matchMedia('(min-width: 767px)');
-const mediumMediaQuery = window.matchMedia('(min-width: 768px)');
-const largeMediaQuery = window.matchMedia('min-width: 1440px');
+const mediumMediaQuery = window.matchMedia('(min-width: 768px) and (max-width: 1439px)');
+const largeMediaQuery = window.matchMedia('(min-width: 1440px)');
 
 function validateEmail(val) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -19,6 +19,7 @@ function hideAllErrors() {
 }
 
 console.log(mediumMediaQuery.matches)
+console.log(largeMediaQuery.matches)
 
 function validate() {
     hideAllErrors();
@@ -72,4 +73,4 @@ form.addEventListener('submit', function(e) {
 
 mediumMediaQuery.addEventListener('change', validate);
 
-// largeMediaQuery.addEventListener('change', validate);
+largeMediaQuery.addEventListener('change', validate);
